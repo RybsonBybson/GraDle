@@ -4,20 +4,7 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": true,
-    "main/package-lock.json": true,
-    "main/package.json": true,
-    "main/tsconfig.node.json": true,
-    "main/vite.config.ts": true,
-    "main/tsconfig.app.json": true,
-    "main/tsconfig.json": true
+    "**/Thumbs.db": true
   },
-  "hide-files.files": [
-    "main/package-lock.json",
-    "main/package.json",
-    "main/tsconfig.node.json",
-    "main/vite.config.ts",
-    "main/tsconfig.app.json",
-    "main/tsconfig.json"
-  ]
+  "hide-files.files": []
 }

@@ -3,3 +3,8 @@ i {
   justify-content: center;
   align-items: center;
 }
+
+.btn {
+  display: flex;
+  gap: 8%;
+}

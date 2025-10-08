@@ -1,6 +1,12 @@
 const lazyMagnitude = 3;
 
-export const lazyCheck = (word: string, comparedTo: string) => {
+/**
+ *
+ * @param {string} word
+ * @param {string} comparedTo
+ * @returns {boolean}
+ */
+export const lazyCheck = (word, comparedTo) => {
   const lazyA = word.toLowerCase().replace(" ", "").split("").sort();
   const lazyB = comparedTo.toLowerCase().replace(" ", "").split("").sort();
   console.log(lazyA, lazyB);

@@ -3,7 +3,7 @@ import "@hackernoon/pixel-icon-library/fonts/iconfont.css";
 import { toast } from "react-hot-toast";
 import { lazyCheck } from "./helpers";
 
-const examplePhrases: string[] = [
+const examplePhrases = [
   "Cuphead",
   "Root Pack",
   "Katana A17",
@@ -13,7 +13,7 @@ const examplePhrases: string[] = [
 ];
 
 function App() {
-  const lbl = useRef<HTMLElement>(null);
+  const lbl = useRef(null);
   const [inp, setInp] = useState("");
 
   const randomPhrase = () => {
@@ -32,9 +32,9 @@ function App() {
     randomPhrase();
   };
 
-  // useEffect(() => {
-  //   randomPhrase();
-  // });
+  useEffect(() => {
+    randomPhrase();
+  }, []);
 
   return (
     <>
@@ -54,8 +54,11 @@ function App() {
           </div>
 
           <div className="col-2">
-            <button className="btn btn-primary p-2" onClick={() => check()}>
-              <i className="hn hn-startups"></i>
+            <button
+              className="btn btn-primary p-2 px-4"
+              onClick={() => check()}
+            >
+              Submit <i className="hn hn-startups"></i>
             </button>
           </div>
         </div>
